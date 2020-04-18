@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>快捷交友项目</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+		<script type="text/javascript">
+		</script>
+		<style>
+			table{
+				font-size:14px;
+			}
+			.td1{
+				color:rgb(244,134,125);
+			}
+			
+			.h2{
+				background-color:#F0F0F0;
+			}
+			#m1{
+				width:100px;
+				height:30px;
+				font-size:15px;
+				font-weight:900;
+				background-color:#FFEC8B;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content">
+				<div id="header">
+	<div id="rightheader">
+		<p>
+			<c1:date/>
+		<br/>
+		</p>
+	</div>
+	<div id="topheader">
+		<h1 id="title">
+			<a href="#">快捷交友</a>
+		</h1>
+	</div>
+	<div id="navigation">
+	</div>
+</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					
+					<h2 class="h2">
+						上传照片:
+					</h2>
+					<form action="userDetail.html" method="post"
+						enctype="multipart/form-data">
+						<input type="file" name="file1" />
+						<input type="submit" value=" 上传" />
+					</form>
+					<br/>
+					<h2 class="h2">
+						照片列表:
+					</h2>
+					<table style="border-spacing:0 8px;">
+						
+						<tr>
+							<td>
+								<img src="upload/pic_1/man1.jpg"
+									width="300" height="200" />
+							</td>
+						</tr>
+						<tr>
+								<td>
+									<textarea name="message" id="message" rows="5" cols="35"></textarea>
+								</td>
+							</tr>
+						<tr><td align="center"><img src="img/dzf.gif" onclick="sendNote();"/>&nbsp;<img src="img/fx.gif" />&nbsp;<img src="img/gz.gif" /></td></tr>
+					</table>
+					<br/>
+					<h2 class="h2">
+						内心独白:<a href="javascript:;">修改</a>
+					</h2>
+					<table width="50%">
+						<tr><td></td></tr>
+					</table>
+					<br/>
+					<h2 class="h2">
+						详细资料:<a href="javascript:;">修改</a>
+					</h2>
+					<table  width="60%">
+						<tr>
+							<td class="td1">姓名:</td>
+							<td>张三</td>
+							<td class="td1">电话</td>
+							<td>010-88888888</td>
+						</tr>
+						<tr>
+							<td class="td1">身高:</td>
+							<td>177</td>
+							<td class="td1">学历:</td>
+							<td>本科及以上</td>
+						</tr>
+						<tr>
+							<td class="td1">婚姻状况:</td>
+							<td>未婚</td>
+							<td class="td1">薪水:</td>
+							<td>5000~10000元</td>
+						</tr>
+						<tr>
+							<td class="td1">省:</td>
+							<td>山东</td>
+							<td class="td1">市:</td>
+							<td>青岛</td>
+						</tr>
+						<tr>
+							<td class="td1">居住情况:</td>
+							<td>已经购房</td>
+							<td class="td1">购车情况:</td>
+							<td>已经购车</td>
+						</tr>
+					</table>
+					<br/>
+					<h2 class="h2">
+						择友条件:<a href="javascript:;">修改</a>
+					</h2>
+					<table width="60%">
+						<tr>
+							<td class="td1">身高范围:</td>
+							<td>170~180cm</td>
+							<td class="td1">学历:</td>
+							<td>本科及以上</td>
+						</tr>
+						<tr>
+							<td class="td1">省:</td>
+							<td>湖南</td>
+							<td class="td1">市:</td>
+							<td>岳阳</td>
+						</tr>
+						<tr>
+							<td class="td1">婚姻状况:</td>
+							<td>未婚</td>
+						</tr>
+					</table>
+					<br/>
+				</div>
+				<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a href="userList.html"><h2>继续查看其它用户</h2></a>
+			</div>
+			<div id="footer">
+	<div id="footer_bg">
+			Copyright (C) 快捷交友 2004-2008, All Rights Reserved
+			京ICP证041189号
+	</div>
+</div>
+		</div>
+	</body>
+</html>

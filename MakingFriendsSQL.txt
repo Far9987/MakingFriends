@@ -1,0 +1,30 @@
+drop database if exists tedu;
+
+create database tedu default character set utf8;
+use tedu;
+
+drop table if exists user;
+create table user(
+	userId int primary key auto_increment,
+	username varchar(32),
+	trueName varchar(32),
+	password varchar(32),
+	age int,
+	sex varchar(10),
+	tel varchar(20),
+	height int,
+	eduLevel int,
+	maritalStatus int,
+	salary int,
+	province int,
+	city int,
+	housing int,
+	carStatus int,
+	innerVoice text,
+	heightCon int,
+	eduCon int,
+	maritalCon int,
+	provinceCon int,
+	cityCon int
+) engine=innodb default character set utf8;
+set char set 'GBK';

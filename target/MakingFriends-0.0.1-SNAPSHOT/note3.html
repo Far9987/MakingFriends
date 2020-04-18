@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>快捷交友项目</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			
+			#table1{
+					border-spacing:0 8px;
+			}
+		</style>
+		<script src="js/prototype-1.6.0.3.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+		<script type="text/javascript" src="js/cookie_util.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+		<script>
+			$(function(){
+				$("#save3").click(updateCondition);
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content">
+				<div id="header">
+	<div id="rightheader">
+		<p>
+			<c1:date/>
+		<br/>
+		</p>
+	</div>
+	<div id="topheader">
+		<h1 id="title">
+			<a href="#">快捷交友</a>
+		</h1>
+	</div>
+	<div id="navigation">
+	</div>
+</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					<h1>
+						我的择友条件
+					</h1>
+					<form>
+						<table id="table1">
+							<tr>
+								<td>
+									身高:
+								</td>
+								<td>
+									<select id="stature" style="width:155px;">
+										<option value="0">160cm以下</option>
+										<option value="1">160cm~170cm</option>
+										<option value="2">170cm~180cm</option>
+										<option value="3">180以上</option>
+									</select>
+								</td>
+							</tr>
+							<tr>	
+								<td>
+									学历:
+								</td>
+								<td>
+									<select id="education" style="width:155px;">
+										<option value="0">初中以下</option>
+										<option value="1">高中</option>
+										<option value="2">专科</option>
+										<option value="3">本科及以上</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									婚姻状况:
+								</td>
+								<td>
+									<select id="marriage" style="width:155px;">
+										<option value="0">未婚</option>
+										<option value="1">已婚</option>
+										<option value="2">离异</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									所在地区:
+								</td>
+								<td>
+									<select id="province" style="width:120px;">
+										<option value="-1">--请选择省--</option>
+										<option value="37">山东</option>
+										<option value="43">湖南</option>
+									</select>
+									<select id="city" name="city" style="width:120px;">
+										<option value="-1">--请选择市--</option>
+										<option value="1">株洲</option>
+										<option value="2">长沙</option>
+										<option value="3">青岛</option>
+										<option value="4">济南</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/save.jpg" id="save3"/>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+	<div id="footer_bg">
+			Copyright (C) 快捷交友 2004-2008, All Rights Reserved
+			京ICP证041189号
+	</div>
+</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>快捷交友项目</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+		<script type="text/javascript" src="js/cookie_util.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#login").click(login);
+				$("#toRegist").click(toRegist);
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content">
+					<div id="header">
+					<div id="topheader">
+						<h1 id="title">
+							<a href="#">快捷交友</a>
+						</h1>
+					</div>
+					<div id="navigation">
+					</div>
+				</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					<h1>
+						登录
+					</h1>
+					<form >
+						<table cellpadding="0" cellspacing="0" border="0"
+							class="form_table">
+							<tr>
+								<td valign="middle" align="right">
+									用户名:
+								</td>
+								<td valign="middle" align="left">
+									<input type="text" class="inputgri" id="name" name="username" />
+									<span style="color:red;"></span>
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" align="right">
+									密码:
+								</td>
+								<td valign="middle" align="left">
+									<input type="password" class="inputgri" id="pwd" name="pwd"/>
+								</td>
+							</tr>
+						</table>
+						<p>
+							<input type="button" id="login" class="button" value="确认 &raquo;" />&nbsp;还不是我们的会员?&nbsp;
+							<input type="button"  id="toRegist" value="赶快加入">
+						</p>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="footer_bg">
+					Copyright (C) 快捷交友 2004-2008, All Rights Reserved
+					京ICP证041189号
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

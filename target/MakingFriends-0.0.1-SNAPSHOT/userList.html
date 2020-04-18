@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>快捷交友项目</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+			a{	
+				color:blue;
+				text-decoration:none;
+				font-size:15px;
+			}
+			a:hover{
+				color:red;
+				text-decoration:underline;
+				font-size:15px;
+			}
+			.msg{
+				width:500px;
+				font-size:15px;
+				font-weight:900;
+				background-color:#FFEC8B;
+				border:1px dotted #FF34B3;
+			}
+			
+			#sxmsg{
+				width:200px;
+				font-size:15px;
+				font-weight:900;
+				background-color:#FFEC8B;
+				border:1px dotted #FF34B3;
+			}
+			
+			#lwmsg{
+				width:200px;
+				font-size:15px;
+				font-weight:900;
+				background-color:#FFEC8B;
+				border:1px dotted #FF34B3;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+		<script type="text/javascript" src="js/cookie_util.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+		<script>
+			$(function(){
+				loadUserList();
+				$('#sx').click(function(){
+							$(this).after("<div id='sxmsg'></div>");
+							$('#sxmsg').html('暂时没有邮件').fadeOut(2000);
+				});
+						
+				$('#lw').click(function(){
+					$(this).after("<div id='lwmsg'></div>");
+					$('#lwmsg').html('暂时没有礼物').fadeOut(2000);
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content"> 
+				<div id="header">
+	<div id="rightheader">
+		<p>
+			<c1:date/>
+		<br/>
+		</p>
+	</div>
+	<div id="topheader">
+		<h1 id="title">
+			<a href="#">快捷交友</a>
+		</h1>
+	</div>
+	<div id="navigation">
+	</div>
+</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					<h1>
+						<img src="img/sx.gif"/><a id="sx" href="javascript:;" onclick="sx();">收信箱</a>
+					</h1>
+					<h1>
+						<img src="img/lwx.gif"/><a id="lw" href="javascript:;" onclick="lw();">礼物箱</a>
+					</h1>
+					<h1>
+						已有用户
+					</h1>
+					<div id="m1"></div>
+					<table id="t1" class="table">
+						<tr class="table_header">
+							<td>
+								ID
+							</td>
+							<td>
+								用户名
+							</td>
+							<td>
+								性别
+							</td>
+							<td>
+								年龄
+							</td>
+							<td>
+								详细信息
+							</td>
+						</tr>
+						
+					</table>
+					<p>
+						<input type="button" class="button" value="退出系统" onclick="location='login.html'"/>
+					</p>
+				</div>
+			</div>
+			<div id="footer">
+	<div id="footer_bg">
+			Copyright (C) 快捷交友 2004-2008, All Rights Reserved
+			京ICP证041189号
+	</div>
+</div>
+		</div>
+	</body>
+</html>
